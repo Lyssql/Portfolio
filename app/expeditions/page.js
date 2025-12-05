@@ -4,10 +4,6 @@ import ExpeditionCard from '@/components/ExpeditionCard';
 import EarthCanvas from '@/components/EarthCanvas';
 import { expeditions } from '@/data/expeditions';
 
-export function getExpeditionBySlug(slug) {
-  return expeditions.find((e) => e.slug === slug);
-}
-
 export default function ExpeditionsPage() {
   return (
     <div className={styles.wrapper}>
@@ -17,8 +13,9 @@ export default function ExpeditionsPage() {
           ← Retour à l’accueil
         </Link>
       </div>
+
       <p>
-        Voile, itinérance, haute montagne… Ces expéditions nourrissent ma façon d’aborder l’innovation : 
+        Voile, itinérance, haute montagne… Ces expéditions nourrissent ma façon d’aborder l’innovation :
         résilience, gestion du risque et adaptation en environnement réel.
       </p>
 
@@ -36,3 +33,4 @@ export default function ExpeditionsPage() {
     </div>
   );
 }
+
